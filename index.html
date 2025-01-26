@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Lifetime Stats</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Football Lifetime Stats</h1>
+    <div class="container">
+        <label for="birthdate">Enter Your Birthdate:</label>
+        <input type="date" id="birthdate">
+        <br><br>
+
+        <label for="team">Select Your Favorite Team:</label>
+        <select id="team">
+            <option value="arsenal">Arsenal</option>
+            <option value="man_city">Manchester City</option>
+            <option value="chelsea">Chelsea</option>
+            <option value="liverpool">Liverpool</option>
+            <!-- Add more teams as needed -->
+        </select>
+        <br><br>
+
+        <button id="getStats">Get Football Stats</button>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
